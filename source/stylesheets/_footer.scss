@@ -1,0 +1,30 @@
+.footer {
+  clear: both;
+  font-family: $font-stack;
+  letter-spacing: 1px;
+  width: inherit;
+  background-color: $gold;
+  color: $off-black;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 2em;
+  padding: 20px;
+
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  a {
+    color: $off-black;
+    text-decoration: none;
+  }
+
+  #hunny {
+    &:hover {
+      color: $off-white;
+    }
+  }
+}

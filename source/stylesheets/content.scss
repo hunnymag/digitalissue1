@@ -1,0 +1,191 @@
+@import "variables";
+@import "social";
+@import "nav";
+@import "footer";
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+/* resets */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry-container {
+  p, ul, ol {
+    color: $off-black;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    -o-transition: .1s;
+    -ms-transition: .1s;
+    -moz-transition: .1s;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+
+// entry metadata
+.entry {
+  background-color: $white;
+  padding: 20px 0;
+}
+
+.entry-details {
+  text-align: center;
+
+  h2 {
+    font-family: $font-stack;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: $gold;
+  }
+
+  h3 {
+    font-family: $text-stack;
+    font-style: italic;
+    margin-top: 5px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+}
+
+.entry-image {
+  width: 50%;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.entry-body {
+  font-family: $text-stack;
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin-bottom: 40px;
+  margin-top: 2em;
+
+  p:first-child {
+    padding-top: 30px;
+  }
+
+  a {
+    color: $gold;
+  }
+}
+
+.centered-title {
+    font-family: $text-stack;
+    font-weight: 300;
+    font-style: italic;
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid $off-black;
+    line-height: 0.1em;
+
+    span {
+        background: #fff;
+        padding: 0 10px;
+    }
+}
+
+/* indenting for poems */
+.indent-1 {
+  padding-left: 2em;
+}
+
+.indent-2 {
+  padding-left: 4em;
+}
+
+.all-entries {
+  padding-top: 2em;
+
+  p {
+    text-align: center;
+  }
+
+  a {
+    color: $gold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px 10px;
+    border: 2px solid $gold;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+    &:hover {
+      background-color: $gold;
+      color: $off-white;
+    }
+  }
+}
+
+/* image slider */
+.flexslider {
+  width: 50%;
+  margin: 0 auto !important;
+
+  img {
+    width: 100%;
+  }
+}
+
+.flex-control-nav {
+  width: 100% !important;
+}
+
+@media screen and (max-width : 960px) {
+    .grid-entry {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .entry-body p {
+        width: 90%;
+    }
+
+    .centered-title {
+      width: 95%;
+    }
+
+    .entry-details {
+      h2 {
+        margin: 0 10px 20px 10px;
+      }
+    }
+}
+
+@media screen and (max-width : 480px) {
+  .entry-image {
+    width: 100%;
+  }
+}
