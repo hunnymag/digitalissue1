@@ -26,6 +26,8 @@ activate :directory_indexes
 configure :build do
   page "/content", :layout => "content.scss"
   page "/", :layout => "index.scss"
+  page "/about", :layout => "index.scss"
+  page "/contributors", :layout => "index.scss"
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
