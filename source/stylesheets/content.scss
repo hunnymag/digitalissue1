@@ -22,7 +22,7 @@ body {
 }
 
 .entry-container {
-  p, ul, ol {
+  p, ul, ol, form {
     color: $off-black;
     display: block;
     width: 60%;
@@ -111,6 +111,13 @@ body {
         background: #fff;
         padding: 0 10px;
     }
+}
+
+/* quiz styling */
+.multiple-choice {
+  label {
+    display: block;
+  }
 }
 
 /* indenting for poems */
