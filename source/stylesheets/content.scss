@@ -267,7 +267,6 @@ body {
     .entry-details {
       h2 {
         width: 95%;
-        // margin: 0 10px 20px 10px;
       }
     }
 
@@ -277,7 +276,7 @@ body {
 }
 
 @media screen and (max-width : 480px) {
-  .entry-image {
+  .entry-image, .all-entries, ul {
     width: 100%;
   }
 }
