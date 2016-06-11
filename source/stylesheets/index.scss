@@ -195,8 +195,12 @@ p {
   }
 
   .centered-title {
-      width: 95%;
-    }
+    width: 95%;
+  }
+
+  .about {
+    max-width: 85%;
+  }
 }
 
 @media screen and (max-width: 577px) {
@@ -211,5 +215,11 @@ p {
 
   #hunny-gif {
     width: 55%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    max-width: 95%;
   }
 }
